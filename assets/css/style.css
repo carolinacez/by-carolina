@@ -1,0 +1,97 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: blacks;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    background-color: white;
+
+} 
+header {
+    padding: 200px;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FFF3FD;
+    border:white solid 30px;
+    background-image: url("../images/background4.jpg");
+    
+    
+}
+header h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: pink;
+    margin: 10px;
+
+}
+
+header a {
+    text-decoration: none;
+    color:pink;
+    padding: 40px 50px;
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+
+
+  header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/*About Me Styling*/
+.title h2 {
+    color: pink;
+    margin: 20px 65px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: #9EB9BE solid ;
+}
+
+.pic img {
+    height: 400px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    border: pink solid 2px;
+ 
+    
+   
+}
+.pic {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    background-image: url("../images/background4.jpg");
+    
+
+}
+.aboutme ul li {
+    list-style: none;
+    margin-right: 20px;
+    border: black 10px;
+}
+.aboutme {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
