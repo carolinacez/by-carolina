@@ -7,11 +7,13 @@
 }
 
 body {
-    color: blacks;
+    color: black;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     background-color: white;
 
 } 
+
+/*header and navigation stlying*/
 header {
     padding: 200px;
     margin: 0;
@@ -23,15 +25,13 @@ header {
     background-color: #FFF3FD;
     border:white solid 30px;
     background-image: url("../images/background4.jpg");
-    
-    
 }
+
 header h1 {
     font-weight: bold;
     font-size: 60px;
     color: pink;
     margin: 10px;
-
 }
 
 header a {
@@ -42,13 +42,17 @@ header a {
     font-size: 1.55vw;
 }
 
-
-  header nav ul {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+
+header li:hover {
+background: rgba(224,209,206, 0.6);
+border-radius: 15px;
 }
 
 /*About Me Styling*/
@@ -97,8 +101,12 @@ div p::first-line {
     align-items: center;
     background-color:  rgba(255,192,203, 0.1);
 }
-/*About me styling ends */
+li span {
+    color: green;
+    font-weight: bold;
+}
 
+/*My work and grid styling */
 .my-work {
     width: 100%;
     height: 500px;
@@ -106,12 +114,98 @@ div p::first-line {
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: url("../images/background5.jpg");
+    
 }
+
+
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    margin: 20px;
+    
+}
+  
+.grid-item {
+    border: 2px solid white;
+    border-radius: 5%;
+    grid-column: span 4;
+    background-color:  rgba(224,209,206, 0.6);
+    color: black;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+   text-decoration: none;
+   width: 100%;
+    
+}
+  
+.grid-item.run-buddy {
+    grid-column: span 14;
+    grid-row: span 2; 
+    font-size: 12.80px;
+    background-image: url("../images/run-buddy.jpg");
+}
+
+.grid-item.next-project {
+    font-size: 12.80px;
+    background-image: url("../images/java-background.png");
+}
+
+.grid-item.future-project {
+    background-image: url("../images/future-image.jpg");
+}
+
+.text-container {
+    background-color: rgba(255,192,203, 0.1);
+    border-radius: 5%;
+    border: white 2px solid;
+    border-left: none;
+    padding: 10px;
+    margin: 0px 0px 50px 0px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.future-container {
+    background-color:rgba(255,192,203, 0.1);
+    border-radius: 5%;
+    border-top: white 2px solid;
+    padding: 15px;
+    font-size: 20px;
+   
+}
+.grid-item:hover {
+    background-image: url("../images/hover.jpg");
+}
+
+/*contact styling*/
 .my-contact {
     width: 100%;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     background-image: url("../images/background6.jpg");
+}
+
+address img {
+    padding: 20px;
+}
+
+/*footer*/
+footer {
+    font-size: 5px;
 }
