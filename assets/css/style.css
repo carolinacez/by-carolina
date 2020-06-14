@@ -203,9 +203,57 @@ h4 {
 
 address img {
     padding: 20px;
+    
 }
 
 /*footer*/
 footer {
     font-size: 5px;
 }
+
+/* media queries */
+
+
+    @media screen and (max-width: 500px) {
+        header {
+            padding: 28px;
+            border: none;
+            width: 77%;
+            margin: 40px;
+            border: none;
+        }
+        header a {
+            padding: 56px 58px;
+            font-weight: normal;
+            font-size: 25px;
+        }
+        .title h2 {
+            margin: 17px 87px;
+            font-size: 25px;
+            justify-content: none;
+            padding: 8px;
+            width: 43%
+        }
+        .aboutme {
+            display: block;
+            
+        }
+        .pic img {
+            height: 235px;
+            margin: 0px;
+
+        }
+        ul {
+            font-size: 10px;
+        }
+        .my-contact {
+            height: 125px;
+        }
+        .contact-list a img {
+            height: 100px;
+           
+            margin: -11px;
+        }
+       
+        
+      }
